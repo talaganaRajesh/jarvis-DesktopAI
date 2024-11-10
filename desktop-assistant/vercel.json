@@ -8,6 +8,30 @@
   ],
   "routes": [
     {
+      "src": "/health",
+      "dest": "backend/App.py"
+    },
+    {
+      "src": "/toggle-voice",
+      "dest": "backend/App.py"
+    },
+    {
+      "src": "/toggle-visual",
+      "dest": "backend/App.py"
+    },
+    {
+      "src": "/command-history",
+      "dest": "backend/App.py"
+    },
+    {
+      "src": "/execute-command",
+      "dest": "backend/App.py"
+    },
+    {
+      "src": "/available-commands",
+      "dest": "backend/App.py"
+    },
+    {
       "src": "/(.*)",
       "dest": "backend/App.py"
     }
