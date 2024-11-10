@@ -233,6 +233,10 @@ def get_available_commands():
         "commands": list(controller.system_commands.commands.keys())
     })
 
+@app.route('/', methods=['GET'])
+def home():
+    return "Welcome to the Desktop Assistant!"
+
 if __name__ == '__main__':
     # Add any startup initialization here
     logger.info("Starting Desktop Automation Server...")
